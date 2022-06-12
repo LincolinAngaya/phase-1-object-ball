@@ -123,3 +123,42 @@ function gameObject() {
     return obj;
 }
 console.log(gameObject())
+
+function homeTeamName() {
+
+    return object['home']['teamName']
+}
+console.log(homeTeamName())
+
+
+
+function awayTeam() {
+    return game.away
+}
+
+function shoeSize() {
+    let size = Object.values(games)
+    return size.map(size => size.shoe)
+}
+
+function teamColors(teamName) {
+    return findByTeamName(teamName).colors
+}
+
+function findByTeamName(teamName) {
+    return teams.find(team => team.teamName === 'teamName')
+}
+
+function playerNumbers() {
+    return findByTeamName(teamName).colors //jersey
+}
+playerStats("Alan Anderson") {
+    return findByName(playerName).players
+}
+
+
+function bigShoeRebounds() {
+    const playerArray = Object(games)
+    debugger
+    return playerArray.filter(games => games[1].shoe > 15).map(pArray => pArray[0])
+}
